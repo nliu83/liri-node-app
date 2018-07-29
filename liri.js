@@ -1,5 +1,7 @@
 require("dotenv").config();
 
+var fs = require("fs");
+
 var keys = require('./keys.js');
 
 var Spotify = require('node-spotify-api');
@@ -29,6 +31,7 @@ switch(action) {
     case 'my-tweets':
     displayTweets();
     break;
+
 };
 
 
